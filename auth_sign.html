@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCS EDUCATION DEPARTMENT</title>
+    <link rel="icon" href="./images/download (1).jpg">
+    <!-- (font-family: "Font Awesome 5 Brands" style:normal weight:400 stretch:100 src index:5) -->
+    <link rel="stylesheet" href="./icons/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="loader-wraper">
+        <div class="lds-ripple" id="lds-ripple">
+            <div>
+                </div><div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------- header section --------------------------------- -->
+    <header class="other-pages-header sign-in__up">
+        <nav class="nav__section-top">
+            <a href="index.html">
+                <img src="./images/download (1).jpg" alt="logo" class="logo">
+            </a>
+
+            <div class="nav_links-sec">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" class="major-link">Services</a></li>
+                    <li><a href="#" class="major-link">About</a></li>
+                    <li><a href="#" class="major-link">Contact</a></li>
+                    <li class="list-item_children not-onMobile"><a href="#">Pages</a>
+                        <ul class="child-li">
+                            <div class="child-cont row-around">
+                                <div class="logo">
+                                    <img src="./images/logo.png" alt="">
+                                </div>
+                                
+                                <ul class="inner-ul" style="background-color: wheat; margin-left: 100px;">
+                                    <li><a href="#">Statistics</a></li>
+                                    <li><a href="blog_page-main.html">Blog</a></li>
+                                    <li><a href="#">Schools</a></li>
+                                    <li><a href="#">Staff</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><button onclick="showSocialLinks()">Social links</button></li>
+                                </ul>
+                                
+                                <ul class="inner-ul">
+                                    <li><a href="#">Looking For a school</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Calendar</a></li>
+                                    <li><a href="#">Today readings</a></li>
+                                    <li><a href="#">Church News</a></li>
+                                    <li><a href="#">Donate</a></li>
+                                </ul>
+                                
+                            </div>
+                        </ul></li>
+                    <li class="active major-link"><a href="auth_sign.html" class="major-link">User</a></li>
+                    <li class="list-item_children search-icon order-1" onclick="showSearchPanel()"><span class="icon"><i class="fas fa-search"></i></span>
+                        <ul class="child-li child-li-S">
+                            <div class="child-cont">
+                                <form action="" method="get">
+                                    <input type="search" placeholder="search..."><button type="submit"> <i class="fas fa-search"></i> </button>
+                                </form>
+                                <p>Looking for something? please dont hesitate to search our page</p>
+                                <p class="feed-back-success">Results are found, please wait for the results....</p>
+                                <p class="feed-back-fail">Results were not found, sorry. Try search something else..</p>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="only-mobile">
+                        <a href="#">Statistics</a>
+                    </li>
+                    <li class="only-mobile">
+                        <a href="#">Schools</a>
+                    </li>
+                    <li class="only-mobile">
+                        <a href="#">Admissions</a>
+                    </li>
+                    <li class="only-mobile" style="cursor: pointer;" onclick="showSocialLinks()">
+                        Our Social Media accounts <br>
+                        <span class="social-icons"><i class="fab fa-facebook"></i></span>
+                        <span class="social-icons"><i class="fab fa-twitter"></i></span>
+                        <span class="social-icons"><i class="fab fa-whatsapp"></i></span>
+                        <span class="social-icons"><i class="fas fa-phone"></i></span>
+                    </li> 
+
+                    <div class="backgrounds">
+                        <span class="icon" onclick="toggledark()">
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="mobile-button_toggle" id="mobile-button_toggle">
+                <!-- <i class="fab fa-menu"></i> -->
+                <span class="hambug"></span>
+            </div>
+        </nav>
+
+        <div class="header-content__pages">
+            <h1 class="top-header">Join the Family</h1>
+            <p>Sign In right now and enjoy all privilages for free</p>
+        </div>
+    </header>
+
+    
+    <!-- ========================== global section ======================== -->
+    <section class="social-links-call-out" id="social-links-call-out">
+        <ul>
+            
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-facebook"></i></span> <span class="name">Facebook</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-twitter"></i></span> <span class="name">Twitter</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-linkedin"></i></span> <span class="name">Linked In</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-whatsapp"></i></span> <span class="name">Whats App</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="tel: +256759685678">
+                    <span class="social-icon"><i class="fas fa-phone"></i></span> <span class="name">+256-759685678</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="tel: +256780774525">                    
+                    <span class="social-icon"><i class="fas fa-phone"></i></span> <span class="name">+256-780774525</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="mailto: collinsxeude@gmail.com">                    
+                    <span class="social-icon"><i class="fas fa-envelope"></i></span> <span class="name">collinsxeude@gmail.com</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="search-on-tablet">
+        <form action="" method="get">
+            <input type="search" placeholder="search..."><button type="submit"> <i class="fas fa-search"></i> </button>
+        </form>
+        <p>Looking for something? please dont hesitate to search our page</p>
+        <p class="feed-back-success">Results are found, please wait for the results....</p>
+        <p class="feed-back-fail">Results were not found, sorry. Try search something else..</p>
+    </section>
+    <!-- ========================== global section ======================== -->
+
+
+    <main class="section__body-sep sign-in-page-content row">
+        <section class="container-Sn row-no-r">
+            
+            <!-- ---------- sign in --------------------------------- -->
+            <div class="sign-in-sec">
+                <form action="" method="post">
+                    <h1 class="title-form">Sign In</h1>
+
+                    <div class="message-sec">
+                        <h3 class="success">Your Cridentials were Sincere, thank you.</h3>
+                        <h3 class="error">Your cridentials are false, please try again</h3>
+                    </div>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email-signin" required placeholder="email address..">
+
+                    <label for="password">Email</label>
+                    <input type="password" name="password" id="password-signin" required placeholder="password address..">
+
+                    <p class="form_creds">Not yet a user, <span class="call-sign_up" id="call-sign_up">Sign up</span></p>
+                    <p class="form_creds">Forgot Password, <a href="#" class="reset_p">Reset Password</a></p>
+
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+
+            <!-- ---------- sign up --------------------------------- -->
+            <div class="sign-up-sec" onclick="oppoShrink()">
+                <form action="" method="post">
+                    <h1 class="title-form">Sign Up</h1>
+
+                    <div class="message-sec">
+                        <h3 class="error">Sorry, this email adress was taken.</h3>
+                    </div>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email-signin" required placeholder="email address..">
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password-signin" required placeholder="password address..">
+
+                    <label for="password">Confirm Password</label>
+                    <input type="password" name="password2" id="password-signin" required placeholder="password address..">
+
+                    <p class="form_creds">Already a user, <span class="call-sign_up">Sign in</span></p>
+
+                    <button type="submit">Sign up</button>
+                </form>
+            </div>
+        </section>
+
+        <aside class="aside-previlages-sec">
+            <h3>privilages of being a user</h3>
+            <ul>
+                <li><span class="icon"><i class="fas fa-star"></i></span>Chat with officials</li>
+                <li><span class="icon"><i class="fas fa-star"></i></span>Easily Updated always</li>
+                <li><span class="icon"><i class="fas fa-star"></i></span>Easily Updated always</li>
+                <li><span class="icon"><i class="fas fa-star"></i></span>Easily Updated always</li>
+                <li><span class="icon"><i class="fas fa-star"></i></span>Easily Updated always</li>
+                <li><span class="icon"><i class="fas fa-star"></i></span>Easily Updated always</li>
+                <li><span class="icon"><i class="fas fa-star"></i></span>Easily Updated always</li>
+            </ul>
+        </aside>
+
+    </main>
+
+
+    <!-- --------------------------------- Blog section --------------------------------- -->
+    <section class="section__body-sep enrole-sectors" style="opacity: .5;">
+        <div class="container elements-center">
+            <h1 class="heading-txt"> Enrole for our academic services anywhere from the world </h1>
+            <a href="#"><button class="enrol">Enrole Now</button></a>
+        </div>
+    </section>
+    
+
+    <!-- --------------------------------- Footer section --------------------------------- -->
+    <footer class="section__body-sep footer-sectors">
+        <div class="container grid-4">
+
+            <div class="foot-sec-col info-logo">
+                <img src="./images/logo.png" alt="logo" class="footer-logo">
+                <p class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, suscipit. Laboriosam, voluptatum id cumque accusantium praesentium odio aut vel voluptas?
+                </p>
+            </div>
+
+            <div class="foot-sec-col quick-links">
+                <h2>QUick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-sec-col important-_links">
+                <h2>Important Links</h2>
+                <ul>
+                    <li><a href="#">Statistics</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Staff Members</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Schools</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-sec-col search_section">
+                <form action="" method="get">
+                    <input type="search" name="serach" id="footer-search" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div class="job">
+                    <p>
+                        If you're looking for a job, please Lorem ipsum dolor sit amet.
+                        <a href="auth_sign.html">Jobs</a>
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-right__sec" style="opacity: .8; color: rgba(255, 255, 255, 0.911);">
+            Copyright &copy; <span id="current_year-footer"></span>  UCS Education Department. All rights reserved.
+        </div>
+        
+    </footer>
+    
+
+
+
+<script src="./icons/font-awesome/js/all.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

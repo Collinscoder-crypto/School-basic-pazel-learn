@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCS EDUCATION DEPARTMENT</title>
+    <link rel="icon" href="./images/download (1).jpg">
+    <!-- (font-family: "Font Awesome 5 Brands" style:normal weight:400 stretch:100 src index:5) -->
+    <link rel="stylesheet" href="./icons/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="loader-wraper">
+        <div class="lds-ripple" id="lds-ripple">
+            <div>
+                </div><div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------- header section --------------------------------- -->
+    <header class="other-pages-header services__hero">
+        <nav class="nav__section-top">
+            <a href="index.html">
+                <img src="./images/download (1).jpg" alt="logo" class="logo">
+            </a>
+
+            <div class="nav_links-sec">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" class="major-link">Services</a></li>
+                    <li><a href="#" class="major-link">About</a></li>
+                    <li><a href="#" class="major-link">Contact</a></li>
+                    <li class="list-item_children not-onMobile"><a href="#">Pages</a>
+                        <ul class="child-li">
+                            <div class="child-cont row-around">
+                                <div class="logo">
+                                    <img src="./images/logo.png" alt="">
+                                </div>
+                                
+                                <ul class="inner-ul" style="background-color: wheat; margin-left: 100px;">
+                                    <li><a href="#">Statistics</a></li>
+                                    <li><a href="blog_page-main.html">Blog</a></li>
+                                    <li><a href="#">Schools</a></li>
+                                    <li><a href="#">Staff</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><button onclick="showSocialLinks()">Social links</button></li>
+                                </ul>
+                                
+                                <ul class="inner-ul">
+                                    <li><a href="#">Looking For a school</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Calendar</a></li>
+                                    <li><a href="#">Today readings</a></li>
+                                    <li><a href="#">Church News</a></li>
+                                    <li><a href="#">Donate</a></li>
+                                </ul>
+                                
+                            </div>
+                        </ul></li>
+                    <li class="active major-link"><a href="auth_sign.html" class="major-link">User</a></li>
+                    <li class="list-item_children search-icon order-1" onclick="showSearchPanel()"><span class="icon"><i class="fas fa-search"></i></span>
+                        <ul class="child-li child-li-S">
+                            <div class="child-cont">
+                                <form action="" method="get">
+                                    <input type="search" placeholder="search..."><button type="submit"> <i class="fas fa-search"></i> </button>
+                                </form>
+                                <p>Looking for something? please dont hesitate to search our page</p>
+                                <p class="feed-back-success">Results are found, please wait for the results....</p>
+                                <p class="feed-back-fail">Results were not found, sorry. Try search something else..</p>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="only-mobile">
+                        <a href="#">Statistics</a>
+                    </li>
+                    <li class="only-mobile">
+                        <a href="#">Schools</a>
+                    </li>
+                    <li class="only-mobile">
+                        <a href="#">Admissions</a>
+                    </li>
+                    <li class="only-mobile" style="cursor: pointer;" onclick="showSocialLinks()">
+                        Our Social Media accounts <br>
+                        <span class="social-icons"><i class="fab fa-facebook"></i></span>
+                        <span class="social-icons"><i class="fab fa-twitter"></i></span>
+                        <span class="social-icons"><i class="fab fa-whatsapp"></i></span>
+                        <span class="social-icons"><i class="fas fa-phone"></i></span>
+                    </li> 
+
+                    <div class="backgrounds">
+                        <span class="icon" onclick="toggledark()">
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="mobile-button_toggle" id="mobile-button_toggle">
+                <!-- <i class="fab fa-menu"></i> -->
+                <span class="hambug"></span>
+            </div>
+        </nav>
+
+        <div class="header-content__pages">
+            <h1 class="top-header">Services We Offer</h1>
+            <p>Please read carefuly, offers are also inside.</p>
+        </div>
+    </header>
+
+    
+    <!-- ========================== global section ======================== -->
+    <section class="social-links-call-out" id="social-links-call-out">
+        <ul>
+            
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-facebook"></i></span> <span class="name">Facebook</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-twitter"></i></span> <span class="name">Twitter</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-linkedin"></i></span> <span class="name">Linked In</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-whatsapp"></i></span> <span class="name">Whats App</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="tel: +256759685678">
+                    <span class="social-icon"><i class="fas fa-phone"></i></span> <span class="name">+256-759685678</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="tel: +256780774525">                    
+                    <span class="social-icon"><i class="fas fa-phone"></i></span> <span class="name">+256-780774525</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="mailto: collinsxeude@gmail.com">                    
+                    <span class="social-icon"><i class="fas fa-envelope"></i></span> <span class="name">collinsxeude@gmail.com</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="search-on-tablet">
+        <form action="" method="get">
+            <input type="search" placeholder="search..."><button type="submit"> <i class="fas fa-search"></i> </button>
+        </form>
+        <p>Looking for something? please dont hesitate to search our page</p>
+        <p class="feed-back-success">Results are found, please wait for the results....</p>
+        <p class="feed-back-fail">Results were not found, sorry. Try search something else..</p>
+    </section>
+    <!-- ========================== global section ======================== -->
+
+
+    <main class="sign-in-page-content services-page-cont">
+
+        <section class="container-Sn column">
+            
+            <!-- ------------ first section --- content ---------- -->
+            <div class="simple-burrner-sec row light-bg mb-40">
+                <img src="./images/logo_umu-1.png" alt="" class="logo">
+                <h1>Stop Searching. <br>Start learning now!</h1>
+            </div>
+
+            <!-- ------------ offer section --- content ---------- -->
+            <div class="offer-service-sec light-bg mb-40">
+                <h1 class="sec-title-cyan-blue">GET UP TO 200,000UGX OFF YOUR TUTION THIS TERM</h1>
+                <p class="info__sec">If you start a program at any one of our 5 campuses between now and June 30, 2021, you will recieve a grant of up to 200,000UGx towards your tuition upon clearing the tution to 100%.</p>
+                <p class="person_det">_<i>Collins Mike</i></p>
+            </div>
+
+            <!-- ------------ Schools-adverts-hero --- content ---------- -->
+            <div class="Schools-adverts-hero light-bg mb-40">
+                <div class="container">
+                    <h2 class="title-sec-ad">We are really great at offering these services</h2>
+                    <ul>
+                        <li>Our Programes Start Monthly</li>
+                        <li>150 Schools across Uganda</li>
+                        <li>Job Placement Assistance</li>
+                        <li>Lifetime course refreshes and skills upgading</li>
+                    </ul>
+                </div>
+
+                <img src="./images/logo.png" alt="logo" class="logo">
+            </div>
+
+            <!-- ------------ main-content-of-page --- content ---------- -->
+            <div class="main-content-of-page mb-40">
+                
+                <!-- ------------- single slot ---------- -->
+                <div class="sec__slot row-no-r">
+                    <div class="logo">
+                        <img src="./images/vectors/undraw_education_f8ru.svg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h2 class="sec_title">Business</h2>
+                        <p class="info">
+                            Fraduates from our business college programs can be found working at a diverse range of companies across the globe, a testament to our programs success.
+                        </p>
+                        <p class="sub-info">
+                            Popular Programs: Advanced Business Management & E-commerce, Accounting & Payroll, Administrative Assistant.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- ------------- single slot ---------- -->
+                <div class="sec__slot row-no-r">
+                    <div class="logo">
+                        <img src="./images/vectors/undraw_education_f8ru.svg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h2 class="sec_title">Business</h2>
+                        <p class="info">
+                            Fraduates from our business college programs can be found working at a diverse range of companies across the globe, a testament to our programs success.
+                        </p>
+                        <p class="sub-info">
+                            Popular Programs: Advanced Business Management & E-commerce, Accounting & Payroll, Administrative Assistant.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- ------------- single slot ---------- -->
+                <div class="sec__slot row-no-r">
+                    <div class="logo">
+                        <img src="./images/vectors/undraw_education_f8ru.svg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h2 class="sec_title">Business</h2>
+                        <p class="info">
+                            Fraduates from our business college programs can be found working at a diverse range of companies across the globe, a testament to our programs success.
+                        </p>
+                        <p class="sub-info">
+                            Popular Programs: Advanced Business Management & E-commerce, Accounting & Payroll, Administrative Assistant.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- ------------- single slot ---------- -->
+                <div class="sec__slot row-no-r">
+                    <div class="logo">
+                        <img src="./images/vectors/undraw_education_f8ru.svg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h2 class="sec_title">Business</h2>
+                        <p class="info">
+                            Fraduates from our business college programs can be found working at a diverse range of companies across the globe, a testament to our programs success.
+                        </p>
+                        <p class="sub-info">
+                            Popular Programs: Advanced Business Management & E-commerce, Accounting & Payroll, Administrative Assistant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <aside class="services_aside-sec">
+            <div class="top-div_sec">
+                <h1 class="top-div_sec-txt">Begin your new accademic journey today by contacting one of our advisors</h1>
+            </div>
+
+            <div class="form__sec-school">
+                <form action="" method="post">
+                    
+                    <div class="input-slot row-no-r">
+                        <span class="icon"><i class="fas fa-school"></i></span>
+                        <input type="text" placeholder="Select Campus*">
+                    </div>
+
+                    <div class="input-slot row-no-r">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <input type="text" placeholder="First Name*">
+                    </div>
+
+                    <div class="input-slot row-no-r">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <input type="text" placeholder="Last Name*">
+                    </div>
+
+                    <div class="input-slot row-no-r">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <input type="email" placeholder="Email Address*">
+                    </div>
+
+                    <div class="input-slot row-no-r">
+                        <span class="icon"><i class="fas fa-phone"></i></span>
+                        <input type="tel" placeholder="Telephone*">
+                    </div>
+
+                    <div class="input-slot row-no-r">
+                        <span class="icon"><i class="fas fa-book"></i></span>
+                        <input type="text" placeholder="Prefered Program*">
+                    </div>
+
+                    <div class="input-slot row-no-r">
+                        <span class="icon column"><i class="fas fa-pen"></i> <input type="reset" value="X" class="reset"></span>
+                        <textarea name="message" id="message1-searvices" cols="30" rows="10" placeholder="Your message please..."></textarea>
+                    </div>
+
+                    <button type="submit">SEND ME INFORMATION</button>
+                </form>
+            </div>
+
+            <div class="addvert">
+                <a href="#">Close Ad</a>
+            </div>
+        </aside>
+
+    </main>
+
+<!-- --------------------------------- Lists of our schools include sec ---------- -->
+    <section class="section__body-sep school-list-sec row">
+        <img src="./images/img_12.JPG" alt="" class="sec-hero" id="school-list-sec__image">
+        
+        <div class="sch-container">
+            <div class="heading-with-desc">
+                <h1 class="sec-heading">Our top schools</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+            </div>
+
+            <div class="schools grid-3">
+
+                <span class="school-name"><a href="#">Uganda martyrs university</a></span>
+                <span class="school-name"><a href="#">Namilyango College</a></span>
+                <span class="school-name"><a href="#">Mt. St Mary's College Namagunga</a></span>
+                <span class="school-name"><a href="#">Nabingo Girls School</a></span>
+                <span class="school-name"><a href="#">Uganda martyrs university</a></span>
+                <span class="school-name"><a href="#">Uganda martyrs university</a></span>
+                <span class="school-name"><a href="#">Uganda martyrs university</a></span>
+                <span class="school-name"><a href="#">Uganda martyrs university</a></span>
+                <span class="school-name"><a href="#">Uganda martyrs university</a></span>
+                <span class="school-name"><a href="#">Uganda martyrs university</a></span>
+                <span class="school-name"><a href="#" class=" button-link">More Schools</a></span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- --------------------------------- Blog section --------------------------------- -->
+    <section class="section__body-sep enrole-sectors" style="opacity: .5;">
+        <div class="container elements-center">
+            <h1 class="heading-txt"> Enrole for our academic services anywhere from the world </h1>
+            <a href="#"><button class="enrol">Enrole Now</button></a>
+        </div>
+    </section>
+    
+
+    <!-- --------------------------------- Footer section --------------------------------- -->
+    <footer class="section__body-sep footer-sectors">
+        <div class="container grid-4">
+
+            <div class="foot-sec-col info-logo">
+                <img src="./images/logo.png" alt="logo" class="footer-logo">
+                <p class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, suscipit. Laboriosam, voluptatum id cumque accusantium praesentium odio aut vel voluptas?
+                </p>
+            </div>
+
+            <div class="foot-sec-col quick-links">
+                <h2>QUick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-sec-col important-_links">
+                <h2>Important Links</h2>
+                <ul>
+                    <li><a href="#">Statistics</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Staff Members</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Schools</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-sec-col search_section">
+                <form action="" method="get">
+                    <input type="search" name="serach" id="footer-search" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div class="job">
+                    <p>
+                        If you're looking for a job, please Lorem ipsum dolor sit amet.
+                        <a href="auth_sign.html">Jobs</a>
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-right__sec" style="opacity: .8; color: rgba(255, 255, 255, 0.911);">
+            Copyright &copy; <span id="current_year-footer"></span>  UCS Education Department. All rights reserved.
+        </div>
+        
+    </footer>
+    
+
+
+
+<script src="./icons/font-awesome/js/all.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCS EDUCATION DEPARTMENT</title>
+    <link rel="icon" href="./images/download (1).jpg">
+    <!-- (font-family: "Font Awesome 5 Brands" style:normal weight:400 stretch:100 src index:5) -->
+    <link rel="stylesheet" href="./icons/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="loader-wraper">
+        <div class="lds-ripple" id="lds-ripple">
+            <div>
+                </div><div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------- header section --------------------------------- -->
+    <header class="other-pages-header about_us-header">
+        <nav class="nav__section-top">
+            <a href="index.html">
+                <img src="./images/download (1).jpg" alt="logo" class="logo">
+            </a>
+
+            <div class="nav_links-sec">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" class="major-link">Services</a></li>
+                    <li><a href="#" class="major-link">About</a></li>
+                    <li><a href="#" class="major-link">Contact</a></li>
+                    <li class="list-item_children not-onMobile"><a href="#">Pages</a>
+                        <ul class="child-li">
+                            <div class="child-cont row-around">
+                                <div class="logo">
+                                    <img src="./images/logo.png" alt="">
+                                </div>
+                                
+                                <ul class="inner-ul" style="background-color: wheat; margin-left: 100px;">
+                                    <li><a href="#">Statistics</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Schools</a></li>
+                                    <li><a href="#">Staff</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><button onclick="showSocialLinks()">Social links</button></li>
+                                </ul>
+                                
+                                <ul class="inner-ul">
+                                    <li><a href="#">Looking For a school</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Calendar</a></li>
+                                    <li><a href="#">Today readings</a></li>
+                                    <li><a href="#">Church News</a></li>
+                                    <li><a href="#">Donate</a></li>
+                                </ul>
+                                
+                            </div>
+                        </ul></li>
+                    <li class="active major-link"><a href="auth_sign.html" class="major-link">User</a></li>
+                    <li class="list-item_children search-icon order-1" onclick="showSearchPanel()"><span class="icon"><i class="fas fa-search"></i></span>
+                        <ul class="child-li child-li-S">
+                            <div class="child-cont">
+                                <form action="" method="get">
+                                    <input type="search" placeholder="search..."><button type="submit"> <i class="fas fa-search"></i> </button>
+                                </form>
+                                <p>Looking for something? please dont hesitate to search our page</p>
+                                <p class="feed-back-success">Results are found, please wait for the results....</p>
+                                <p class="feed-back-fail">Results were not found, sorry. Try search something else..</p>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="only-mobile">
+                        <a href="#">Statistics</a>
+                    </li>
+                    <li class="only-mobile">
+                        <a href="#">Schools</a>
+                    </li>
+                    <li class="only-mobile">
+                        <a href="#">Admissions</a>
+                    </li>
+                    <li class="only-mobile" style="cursor: pointer;" onclick="showSocialLinks()">
+                        Our Social Media accounts <br>
+                        <span class="social-icons"><i class="fab fa-facebook"></i></span>
+                        <span class="social-icons"><i class="fab fa-twitter"></i></span>
+                        <span class="social-icons"><i class="fab fa-whatsapp"></i></span>
+                        <span class="social-icons"><i class="fas fa-phone"></i></span>
+                    </li> 
+
+                    <div class="backgrounds">
+                        <span class="icon" onclick="toggledark()">
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="mobile-button_toggle" id="mobile-button_toggle">
+                <!-- <i class="fab fa-menu"></i> -->
+                <span class="hambug"></span>
+            </div>
+        </nav>
+
+        <div class="header-content__pages">
+            <h1 class="top-header">About</h1>
+            <p>Department of education Uganda catholic secretariat</p>
+        </div>
+    </header>
+
+    <section class="section__body-sep second-header-sec">
+        
+        <div class="header-content">
+            <h1 class="title-inf">Hello! Welcome to Department of education Uganda catholic secretariat</h1>
+            <p class="quick-info">New to such an organization. Here, you are very welcome. We are going to introduce ourselves to you in full details.</p>
+
+            <div class="form">
+                <form action="" method="get">
+                    <div class="input-sec">
+                        <span class="icon"><i class="fas fa-search"></i></span>
+                        <input type="search" name="search" id="search_about-pg" placeholder="Search for anything">
+                    </div>
+                </form>
+            </div>
+            <div class="top-infos row-no-r">
+                <div class="info"><span class="number">5670832</span> <span class="name"> Clients </span></div>
+                <div class="info"><span class="number">56708</span> <span class="name"> Workers </span></div>
+            </div>
+        </div>
+        <img src="./images/img_12.JPG" alt="" class="second-h-img">
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <!-- --------------------------------- new to UCS --------------------------------- -->
+    <section class="new-to-us elements-center">
+        <div class="heading-with-desc">
+            <h1 class="sec-heading">What our Clients Say About Us</h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, illum!</p>
+        </div>
+        <a href="auth_sign.html" class="link-but">Sign up now</a>
+    </section>
+
+    <!-- --------------------------------- Select type of user --------------------------------- -->
+    <section class="guest-class-cat">
+        <div class="heading-with-desc">
+            <h1 class="sec-heading">Strictly Interested in</h1>
+            <p class="description">Please select what type of guest you are</p>
+        </div>
+        
+        <div class="buttons-group-cats row">
+            <a href="#" class="catery-type">UCS<br> Offices</a>
+            <a href="#" class="catery-type">UCS<br> Officials</a>
+            <a href="#" class="catery-type">UCS<br> Statistics</a>
+            <a href="#" class="catery-type">UCS<br> Online Education</a>
+        </div>
+
+        <div class="real-infomation-sec">
+            <p class="info">
+                The Uganda Catholic Education Department in the Uganda Catholic Secretariat, established in 1956 is the technical arm of the Education Commission and is mandated to coordinate activities related to education country wide in liaison with the diocesan education departments. It is further obliged to formulate guidelines for diocesan education departments during the formulation of the diocesan education policies and standards as well as monitoring the implementation of the diocesan policies and services to ensure compliance with standards and regulations set by the Uganda Episcopal Conference. It offers technical support supervision, advice and mentoring of the diocesan education departments and institutions, schools as well as networking and lobbying on behalf of the Uganda Episcopal Conference with government, Private for Profit institutions and international agencies to foster development in the education sector. At the national level, the Education Department is responsible for implementing the decisions of the Education Commission and of the General Assembly, implementing policies related to education in response to the vision and mission of the department aligned with that of the Uganda Catholic Secretariat and Uganda Episcopal Conference. The education department in this regard is central in the planning and !   Broad Objectives:  To promote the functioning of the Education Department of the Uganda Catholic Secretariat  To create an environment for disseminating the Reflections and guidelines  To promote the dynamic management and sustainability of the Roman Catholic Church Education Services and Institutions !
+                
+                    Vision: “A community of persons who are fully aware of their infinite dignity as children of God and of their responsibility to live and act according to this greatness” Mission: “To promote the integral education of the human person as an experience of knowledge, growth and understanding reality, whose ultimate and total meaning is Jesus Christ”.
+                
+            </p>
+        </div>
+    </section>
+    
+    <!-- --------------------------------- Select type of user --------------------------------- -->
+    <section class="management-sec">
+        <div class="heading-with-desc">
+            <h1 class="sec-heading">The management commity</h1>
+            <p class="description">These are the spear heads of this organisation, and they are the reason why the Education of the country is at a climax</p>
+        </div>
+
+        <div class="container grid-3">
+
+            <!-- worker section per head=--------------------------------- -->
+            <div class="user-worker-sec">
+                <div class="img-sec">
+                    <img src="./images/person_14.jpg" alt="UCS image loading...">
+                    <div class="hover-info">
+                        <h3>Masiko Bekham</h3>
+                        <h4>Director of studies</h4>
+                        <p class="office"><span class="place">Office</span> Nsambya</p>
+                    </div>
+                </div>
+                <footer class="user-footer row-no-r between">
+                    <p class="txt">More</p>
+                    <div class="simp-but"> <span class="icon"><i class="fas fa-plus"></i></span> </div>
+                </footer>
+
+                <button id="more-workers"> <span class="icon"><i class="fas fa-plus"></i></span> More Workers</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- --------------------------------- Watch video intros --------------------------------- -->
+    <section class="watch-our-vids">
+        <div class="heading-with-desc">
+            <h1 class="sec-heading">Video introductions of who we are.</h1>
+            <p class="description">Watch videos of who we are and how we operate in Uganda. Videos May also include long event video coverages</p>
+        </div>
+
+        <div class="container row">
+            <img src="./images/person_21.jpg" alt="UCS image loading..." class="img-sec">
+            <div class="right-content">
+                <div class="dash-deco">______</div>
+                <h3 class="sec-title">Video Introductions</h3>
+                <p class="alert-sec">The cortasey Videos hosted on google's servers. <br>You are eligibles to the their terms and conditions.</p>
+
+                <a href="#" class="more-vids">Explore videos</a>
+
+                <div class="inner-container">
+                    
+                    <!-- ---------- single video --------------------------------- -->
+                    <div class="box">
+                        <h3>About Us video</h3>
+
+                        <p class="info">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aliquam eaque. Obcaecati accusamus, placeat reprehenderit eveniet modi iusto neque sunt.
+                        </p>
+                        <p class="link"><span>Click the link to watch</span> <a href="https://www.youtube.com/watch?v=Oi4R6vRZmck">Play</a></p>
+                    </div>
+                    
+                    <!-- ---------- single video --------------------------------- -->
+                    <div class="box">
+                        <h3>All Our Events Videos</h3>
+
+                        <p class="info">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aliquam eaque. Obcaecati accusamus, placeat reprehenderit eveniet modi iusto neque sunt.
+                        </p>
+                        <p class="link"><span>Click the link to watch</span> <a href="https://www.youtube.com/watch?v=Oi4R6vRZmck">Play</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------- What people say about us ---------------------------------------------------------- -->
+    <section class="what-people_say row">
+
+        <!-- -------------------- container_one ---------- -->
+        <div class="container_one">
+            <div class="heading-with-desc">
+                <h1 class="sec-heading">Video introductions of who we are.</h1>
+                <p class="description">Watch videos of who we are and how we operate in Uganda. Videos May also include long event video coverages</p>
+            </div>
+            <div class="container row-no-r around">
+                
+                <!-- -----box ---------- -->
+                <div class="box">
+                    <img src="./images/bishop_50.png" alt="UCS image loading...">
+                    <div class="info">
+                        <div class="names">Collins Michael</div>
+                        <p class="qualification">ProAdviser</p>
+                    </div>
+                </div>
+
+                <!-- -----box ---------- -->
+                <div class="box">
+                    <img src="./images/bishop_55.jpg.png" alt="UCS image loading...">
+                    <div class="info">
+                        <div class="names">Collins Michael</div>
+                        <p class="qualification">ProAdviser</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------- container_two ---------- -->
+        <div class="container_two">
+            <div class="heading-with-desc">
+                <h1 class="sec-heading">Does UCS give any offers in <br> any of its schools?</h1>
+                <p class="description">Yeas, it does but on a random time basis. please sign up to get newslaters of our offers</p>
+                <a href="auth_sign.html" class="anch-but">Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- --------------------------------- What people say about us ---------------------------------------------------------- -->
+    <section class="contact-us_abt elements-center">
+        <h1>Need to get in touch?</h1>
+
+        <a href="contact_page.html" class="anch-butt">Contact Us</a>
+    </section>
+    
+    <!-- --------------------------------- Resources section ---------------------------------------------------------- -->
+    <section class="resources-sec">
+        <div class="heading-with-desc">
+            <h1 class="sec-heading">What our Clients Say About Us</h1>
+        </div>
+
+        <div class="container grid-3">
+
+            <!-- ---------- section box ------------ -->
+            <div class="box-sec">
+                <div class="heading-with-desc">
+                    <h1 class="sec-heading">Find a school</h1>
+                </div>
+                <p class="info">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam saepe culpa dolore reiciendis laborum officiis?
+                </p>
+                <a href="schools_page.html" class="grab-admission">Find your School</a>
+            </div>
+
+            <!-- ---------- section box ------------ -->
+            <div class="box-sec">
+                <div class="heading-with-desc">
+                    <h1 class="sec-heading">Find a school</h1>
+                </div>
+                <p class="info">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam saepe culpa dolore reiciendis laborum officiis?
+                </p>
+                <a href="schools_page.html" class="grab-admission">Find your School</a>
+            </div>
+
+            <!-- ---------- section box ------------ -->
+            <div class="box-sec">
+                <div class="heading-with-desc">
+                    <h1 class="sec-heading">Find a school</h1>
+                </div>
+                <p class="info">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam saepe culpa dolore reiciendis laborum officiis?
+                </p>
+                <a href="schools_page.html" class="grab-admission">Find your School</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================== global section ======================== -->
+    <section class="social-links-call-out" id="social-links-call-out">
+        <ul>
+            
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-facebook"></i></span> <span class="name">Facebook</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-twitter"></i></span> <span class="name">Twitter</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-linkedin"></i></span> <span class="name">Linked In</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="#">
+                    <span class="social-icon"><i class="fab fa-whatsapp"></i></span> <span class="name">Whats App</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="tel: +256759685678">
+                    <span class="social-icon"><i class="fas fa-phone"></i></span> <span class="name">+256-759685678</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="tel: +256780774525">                    
+                    <span class="social-icon"><i class="fas fa-phone"></i></span> <span class="name">+256-780774525</span>
+                </a>
+            </li>
+
+            <li class="link-social-sec" onclick="closeParent()">
+                <a href="mailto: collinsxeude@gmail.com">                    
+                    <span class="social-icon"><i class="fas fa-envelope"></i></span> <span class="name">collinsxeude@gmail.com</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="search-on-tablet">
+        <form action="" method="get">
+            <input type="search" placeholder="search..."><button type="submit"> <i class="fas fa-search"></i> </button>
+        </form>
+        <p>Looking for something? please dont hesitate to search our page</p>
+        <p class="feed-back-success">Results are found, please wait for the results....</p>
+        <p class="feed-back-fail">Results were not found, sorry. Try search something else..</p>
+    </section>
+    <!-- ========================== global section ======================== -->
+
+    <!-- --------------------------------- Blog section --------------------------------- -->
+    <section class="section__body-sep enrole-sectors">
+        <div class="container elements-center">
+            <h1 class="heading-txt"> Enrole for our academic services anywhere from the world </h1>
+            <a href="#"><button class="enrol">Enrole Now</button></a>
+        </div>
+    </section>
+    
+
+    <!-- --------------------------------- Footer section --------------------------------- -->
+    <footer class="section__body-sep footer-sectors">
+        <div class="container grid-4">
+
+            <div class="foot-sec-col info-logo">
+                <img src="./images/logo.png" alt="logo" class="footer-logo">
+                <p class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, suscipit. Laboriosam, voluptatum id cumque accusantium praesentium odio aut vel voluptas?
+                </p>
+            </div>
+
+            <div class="foot-sec-col quick-links">
+                <h2>QUick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="active-foot"><a href="blog_page-main.html">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-sec-col important-_links">
+                <h2>Important Links</h2>
+                <ul>
+                    <li><a href="#">Statistics</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Staff Members</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Schools</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-sec-col search_section">
+                <form action="" method="get">
+                    <input type="search" name="serach" id="footer-search" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div class="job">
+                    <p>
+                        If you're looking for a job, please Lorem ipsum dolor sit amet.
+                        <a href="#">Jobs</a>
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: aliceblue; padding: 5px; margin: 2px; font-size: 18px;"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-right__sec" style="opacity: .8; color: rgba(255, 255, 255, 0.911);">
+            Copyright &copy; <span id="current_year-footer"></span>  UCS Education Department. All rights reserved.
+        </div>
+        
+    </footer>
+    
+
+
+
+<script src="./icons/font-awesome/js/all.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
